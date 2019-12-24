@@ -11,7 +11,7 @@
 					"lat": 				    47.0833,
 					"lon": 				    8.000,
 					"name": 				"Aargau, Switzerland",
-					"zoom": 				13,
+					"zoom": 				20,
 					"icon": 				"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
 					"line": 				true
 				},
@@ -36,7 +36,7 @@
 				"location": {
                     "lat":                  47.0833,
                     "lon":                  8.000,
-					"zoom": 				13,
+					"zoom": 				20,
 					"icon": 				"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
 					"line": 				true
 				},
@@ -57,7 +57,7 @@
 					"lat": 				47.479698,
 					"lon": 				8.302960,
 					"name": 				"ABB Schweiz AG",
-					"zoom": 				13,
+					"zoom": 				20,
 					"icon": 				"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
 					"line": 				true
 				},
@@ -78,7 +78,7 @@
 					"lat": 				47.435940,
 					"lon": 				8.166502,
 					"name": 				"LafargeHolcim",
-					"zoom": 				13,
+					"zoom": 				20,
 					"icon": 				"http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
 					"line": 				true
 				},
@@ -99,7 +99,7 @@
                     "lat":                 47.397616,
                     "lon":                 8.068815,
                     "name":                 "Swisslog Company",
-                    "zoom":                 13,
+                    "zoom":                 20,
                     "icon":                 "http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
                     "line":                 true
                 },
@@ -120,7 +120,7 @@
                     "lat":                 47.478803,
                     "lon":                 8.213687,
                     "name":                 "FHNW Brungg-Windisch",
-                    "zoom":                 13,
+                    "zoom":                 20,
                     "icon":                 "http://maps.gstatic.com/intl/en_us/mapfiles/ms/micons/blue-pushpin.png",
                     "line":                 true
                 },

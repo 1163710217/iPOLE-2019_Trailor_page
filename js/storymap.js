@@ -16585,10 +16585,14 @@ VCO.Map.Leaflet = VCO.Map.extend({
 		// Set Tiles
 		switch(_map_type_arr[0]) {
 			case 'mapbox':
-				var mapbox_name = _map_type_arr[1] || 'nuknightlab.hif6ioi4';
+				//var mapbox_name = _map_type_arr[1] || 'nuknightlab.hif6ioi4';
 				_options.subdomains 	= 'abcd';
 				_options.attribution 	= _attribution_knightlab + "<div class='mapbox-maplogo'></div><a href='https://www.mapbox.com/about/maps/' target='_blank'>© Mapbox © OpenStreetMap</a>";
-				_tilelayer = new L.TileLayer("https://{s}.tiles.mapbox.com/v2/" + mapbox_name + "/{z}/{x}/{y}.png", _options);
+				//_tilelayer = new L.TileLayer("https://{s}.tiles.mapbox.com/v2/" + mapbox_name + "/{z}/{x}/{y}.png", _options);
+				_tilelayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+					maxZoom: 30,
+					id: 'mapbox.streets'//'mapbox.satellite'
+				});
 				break;
 			case 'stamen':
 				_tilelayer = new L.StamenTileLayer(_map_type_arr[1] || 'toner-lite', _options);
@@ -17390,7 +17394,7 @@ VCO.StoryMap = VCO.Class.extend({
 			// interaction
 			dragging: 				true,
 			trackResize: 			true,
-			map_type: 				"osm",//"stamen:toner-lite",
+			map_type: 				"mapbox",//"osm",//"stamen:toner-lite",
 			map_mini: 				true,
 			map_subdomains: 		"",
 			map_as_image: 			false,
