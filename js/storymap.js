@@ -16425,7 +16425,7 @@ VCO.Map.Leaflet = VCO.Map.extend({
 	_createMap: function() {
 		
 		
-		this._map = new L.map(this._el.map, {scrollWheelZoom:false, zoomControl:!this.options.map_mini});
+		this._map = new L.map(this._el.map, {scrollWheelZoom:false, zoomControl:this.options.map_mini});
 		this._map.on("load", this._onMapLoaded, this);
 		
 		
@@ -17413,7 +17413,7 @@ VCO.StoryMap = VCO.Class.extend({
 			slide_default_fade: 	"0%", 			// landscape fade
 			menubar_default_y: 		0,
 			path_gfx: 				"gfx",
-			map_popup: 				false,
+			map_popup: 				true,
 			zoom_distance: 			100,
 			calculate_zoom: 		true,   		// Allow map to determine best zoom level between markers (recommended)
 			use_custom_markers: 	false,  		// Allow use of custom map marker icons
