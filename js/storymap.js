@@ -7080,7 +7080,7 @@ VCO.StorySlider = VCO.Class.extend({
 			height: 				600,
 			default_bg_color: 		{r:256, g:256, b:256},
 			slide_padding_lr: 		40, 			// padding on slide of slide
-			start_at_slide: 		1,
+			start_at_slide: 		0,
 			slide_default_fade: 	"0%", 			// landscape fade
 			// animation
 			duration: 				1000,
@@ -15027,12 +15027,12 @@ L.Control.MiniMap = L.Control.extend({
         position: 'bottomright',
         toggleDisplay: false,
         zoomLevelOffset: -5,
-        zoomLevelFixed: false,
+        zoomLevelFixed: true,
         zoomAnimation: false,
         autoToggleDisplay: false,
 		show_view: true,
-        width: 150,
-        height: 150,
+        width: 120,
+        height: 120,
         aimingRectOptions: {
             color: "#c34528",
             weight: 1,
@@ -15108,7 +15108,7 @@ L.Control.MiniMap = L.Control.extend({
 				fillColor: "#c34528",
 				color: "#FFFFFF",
 				weight:2,
-				radius: 10,
+				radius: 5,
 				fill:true,
 				fillOpacity: 1,
 				stroke:true,
