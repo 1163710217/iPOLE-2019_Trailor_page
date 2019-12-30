@@ -16589,10 +16589,10 @@ VCO.Map.Leaflet = VCO.Map.extend({
 				_options.subdomains 	= 'abcd';
 				_options.attribution 	= _attribution_knightlab + "<div class='mapbox-maplogo'></div><a href='https://www.mapbox.com/about/maps/' target='_blank'>© Mapbox © OpenStreetMap</a>";
 				//_tilelayer = new L.TileLayer("https://{s}.tiles.mapbox.com/v2/" + mapbox_name + "/{z}/{x}/{y}.png", _options);
-				_tilelayer = L.tileLayer('https://api.mapbox.com/styles/v1/1163710217/ck4p6dqz00oxk1cpyiixgecld.html?fresh=true&title=copy&access_token=pk.eyJ1IjoiMTE2MzcxMDIxNyIsImEiOiJjazRwNWhrdXMxcWdsM2RtcjN2ZnppNzB5In0.i1PawwJGcZEYyo6dzwZSnw#8.9/47.381953/8.181177/0', {
+				_tilelayer = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiMTE2MzcxMDIxNyIsImEiOiJjazRwNWhrdXMxcWdsM2RtcjN2ZnppNzB5In0.i1PawwJGcZEYyo6dzwZSnw&style=mapbox://styles/mapbox/Streets', {
 					maxZoom: 30,
-					//id: 'mapbox.streets',//'mapbox.satellite'
-					//style: 'mapbox://styles/1163710217/ck4p6dqz00oxk1cpyiixgecld'
+					id: 'mapbox.streets',//'mapbox.satellite'
+					style: 'mapbox://styles/1163710217/ck4p6dqz00oxk1cpyiixgecld'
 				});
 				break;
 			case 'stamen':
